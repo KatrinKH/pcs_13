@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "989230253813",
+    "project_id": "gameapp-e2b9e",
+    "storage_bucket": "gameapp-e2b9e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989230253813:android:f115dd9003f2dee25b27bc",
+        "android_client_info": {
+          "package_name": "com.katrin.pcs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2wc_u4KHgRH6WiwM1o9G0P005U-kgPvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
