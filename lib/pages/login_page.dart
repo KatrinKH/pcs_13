@@ -17,38 +17,57 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color(0xFF67BEEA),
       body: SafeArea(
         child: Center(
-          child: Column(
-            children: [
-              // logo
-              Icon(
-                Icons.message, 
-                size: 80,
-                color: Colors.grey[800],
-              ),
-          
-              // welcome back message
-              const Text(
-                "С возвращением, мы скучали по вам!",
-                style: TextStyle(
-                  fontSize: 16,
-                ),
-              ),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Column(
+              children: [
+                const SizedBox(height: 50),
 
-              // email textfield
-              MyTextField(
-                controller: emailController, 
-                hintText: 'Почта', 
-                obscureText: false,
-              ),
-          
-              // password textfield
-          
-              // sign in button
-          
-              // not a member? register now
-            ],
+                // logo
+                Icon(
+                  Icons.message, 
+                  size: 80,
+                  color: Colors.grey[800],
+                ),
+
+                const SizedBox(height: 50),
+            
+                // welcome back message
+                const Text(
+                  "С возвращением, мы скучали по вам!",
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                ),
+
+                const SizedBox(height: 25),
+            
+                // email textfield
+                MyTextField(
+                  controller: emailController, 
+                  hintText: 'Почта', 
+                  obscureText: false,
+                ),
+
+                const SizedBox(height: 10),
+            
+                // password textfield
+                MyTextField(
+                  controller: passwordController, 
+                  hintText: 'Пароль', 
+                  obscureText: true,
+                ),
+
+                const SizedBox(height: 25),
+            
+                // sign in button
+            
+                // not a member? register now
+              ],
+            ),
           ),
         ),
       ),
