@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pcs_13/components/my_button.dart';
 import 'package:pcs_13/components/my_text_field.dart';
 
 class LoginPage extends StatefulWidget {
@@ -64,6 +65,10 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 25),
             
                 // sign in button
+                MyButton(
+                  onTap: () {}, 
+                  text: 'Войти',
+                ),
             
                 // not a member? register now
               ],
