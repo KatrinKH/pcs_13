@@ -29,13 +29,16 @@ class _LoginPageState extends State<LoginPage> {
         passwordController.text,
       );
     } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            e.toString(),
+      // Check if the widget is still mounted before accessing context
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              e.toString(),
+            ),
           ),
-        ),
-      );
+        );
+      }
     }
   }
 
