@@ -63,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
             
                 // welcome back message
                 const Text(
-                  "С возвращением, мы скучали по вам!",
+                  "С возвращением, мы скучали!",
                   style: TextStyle(
                     fontSize: 16,
                   ),
